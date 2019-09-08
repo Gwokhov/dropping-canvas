@@ -1,5 +1,8 @@
 # DroppingCanvas
 
+[![npm](https://img.shields.io/npm/v/dropping-canvas)](https://www.npmjs.com/package/dropping-canvas)
+![GitHub file size in bytes](https://img.shields.io/github/size/Gwokhov/dropping-canvas/dist/dropping.js)
+
 ## Introduction
 
 💧 DroppingCanvas is a lightweight (only **4.86 KB**) physics tool which can help you generate random motive image object simply on canvas. It is inspired by [sprinkler](https://github.com/axelpale/sprinkler), and DroppingCanvas also provide more flexible and modern APIs.
