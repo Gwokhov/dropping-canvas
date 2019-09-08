@@ -2,6 +2,8 @@
 
 [Demo](./demo/index.html)
 
+![Demo](./demo.png)
+
 ## Introduction
 
 💧 DroppingCanvas is a physics tool which can help you generate random motive image object simply on canvas. It is inspired by [sprinkler](https://github.com/axelpale/sprinkler), and DroppingCanvas also provide more flexible and modern APIs.
