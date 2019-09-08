@@ -77,6 +77,7 @@
         key = ele.name.substr(0, ele.name.indexOf('Max'))
         options[key][1] = ele.value
       } else if (ele.type === 'checkbox') {
+        key = ele.name
         options[key] = ele.checked
       } else if (ele.type === 'file') {
         droppingCanvas.updateImages(e.target.files)
