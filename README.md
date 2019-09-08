@@ -5,7 +5,7 @@
 
 ## Introduction
 
-💧 DroppingCanvas is a lightweight (only **4.86 KB**) physics tool which can help you generate random motive image object simply on canvas. It is inspired by [sprinkler](https://github.com/axelpale/sprinkler), and DroppingCanvas also provide more flexible and modern APIs.
+💧 DroppingCanvas is a lightweight (**5 KB**) physics tool which can help you generate random motive image object simply on canvas. It is inspired by [sprinkler](https://github.com/axelpale/sprinkler), and DroppingCanvas also provide more flexible and modern APIs.
 
 [Demo](https://gwokhov.github.io/dropping-canvas/demo/index.html)
 
