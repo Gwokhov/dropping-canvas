@@ -1,6 +1,6 @@
 # DroppingCanvas
 
-[Demo](./demo/index.html)
+[Demo](https://gwokhov.github.io/dropping-canvas/demo/index.html)
 
 ![Demo](./demo.png)
 
@@ -52,7 +52,7 @@ var droppingCanvas = new DroppingCanvas(canvas, images, options)
 
 Now the vertical speed is in the range of 200-400 (random).
 
-For more options, you can see the [Demo](./demo/index.html) or check below 👇.
+For more options, you can see the [Demo](https://gwokhov.github.io/dropping-canvas/demo/index.html) or check below 👇.
 
 ## Option Properties
 
