@@ -24,6 +24,7 @@ export default class DroppingCanvas {
     this.cells = []
     this.options = {}
     this.isRunning = false
+    this.isImageLoaded = false
     this.isStopGenerate = false
     this.isImmediateClean = false
     this.past = null
@@ -180,15 +181,22 @@ export default class DroppingCanvas {
     if (this.isRunning && !this.isStopGenerate) {
       return
     }
-    loadImages(this.imgUrls, (msg, images) => {
-      if (msg) {
-        console.error(msg)
-      }
+    if (!this.isImageLoaded) {
+      loadImages(this.imgUrls, (msg, images) => {
+        if (msg) {
+          console.error(msg)
+        }
+        this.isImageLoaded = true
+        this.isRunning = true
+        this.isStopGenerate = false
+        this.images = images
+        this._startAnimation()
+      })
+    } else {
       this.isRunning = true
       this.isStopGenerate = false
-      this.images = images
       this._startAnimation()
-    })
+    }
   }
 
   pause() {
