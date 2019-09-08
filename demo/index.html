@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dropping Canvas Sample</title>
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .controls {
+        position: fixed;
+        top: 0;
+        right: 0;
+        text-align: center;
+        font-size: 12px;
+        padding: 12px;
+        color: rgba(0, 0, 0, 0.7);
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.05) 60%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+      .controls > label {
+        display: block;
+        padding: 1.4px 0;
+      }
+      .controls > label > input {
+        font-size: 12px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1.2px solid rgba(0, 0, 0, 0.1);
+        outline-color: rgba(0, 0, 0, 0.2);
+      }
+      .controls > label > input[type=number] {
+        width: 3em;
+      }
+      .controls > label > input[type=file] {
+        width: 150px;
+        display: block;
+      }
+      .controls-tips {
+        margin-top: 6px;
+        max-width: 160px;
+        font-size: 8px;
+      }
+      .controls-actions {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="controls">
+      <label>images: <input type="file" multiple></label>
+      <label>dropPerSecond: <input type="number" name="dropPerSecond"/></label>
+      <label>isBoundingSize: <input type="checkbox" name="isBoundingSize"/></label>
+      <label>z: <input type="number" name="zMin"/> ~ <input type="number" name="zMax"/></label>
+      <label>vX: <input type="number" name="vXMin"/> ~ <input type="number" name="vXMax"/></label>
+      <label>vY: <input type="number" name="vYMin"/> ~ <input type="number" name="vYMax"/></label>
+      <label>vZ: <input type="number" name="vZMin"/> ~ <input type="number" name="vZMax"/></label>
+      <label>vA: <input type="number" name="vAMin"/> ~ <input type="number" name="vAMax"/></label>
+      <label>vR: <input type="number" name="vRMin"/> ~ <input type="number" name="vRMax"/></label>
+      <label>aX: <input type="number" name="aXMin"/> ~ <input type="number" name="aXMax"/></label>
+      <label>aY: <input type="number" name="aYMin"/> ~ <input type="number" name="aYMax"/></label>
+      <label>aZ: <input type="number" name="aZMin"/> ~ <input type="number" name="aZMax"/></label>
+      <label>aA: <input type="number" name="aAMin"/> ~ <input type="number" name="aAMax"/></label>
+      <label>aR: <input type="number" name="aRMin"/> ~ <input type="number" name="aRMax"/></label>
+      <div class="controls-tips">x, y will generate by canvas size dynamically if not pass the value</div>
+      <label>x: <input type="number" name="xMin"/> ~ <input type="number" name="xMax"/></label>
+      <label>y: <input type="number" name="yMin"/> ~ <input type="number" name="yMax"/></label>
+      <div class="controls-actions">
+        <button id="start">start</button>
+        <button id="pause">pause</button>
+        <button id="stop">stop</button>
+      </div>
+    </section>
+    <canvas id="canvas"></canvas>
+    <script src="../dist/index.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
