@@ -7,7 +7,7 @@ export default {
   output: {
     name: 'DroppingCanvas',
     format: 'umd',
-    file: 'dist/index.js'
+    file: 'dist/dropping.js'
   },
   plugins: [
     commonjs(),
