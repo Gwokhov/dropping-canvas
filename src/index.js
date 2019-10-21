@@ -47,7 +47,7 @@ export default class DroppingCanvas {
     if (isCover) {
       this.options = Object.assign(this.options, options)
     } else {
-      this.options = Object.assign(DEFAULT_OPTIONS, options)
+      this.options = Object.assign({}, DEFAULT_OPTIONS, options)
     }
   }
 
