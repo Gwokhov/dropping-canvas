@@ -1,6 +1,6 @@
 {
   "name": "dropping-canvas",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/dropping.js",
   "author": "Gwokhov",
   "license": "MIT",

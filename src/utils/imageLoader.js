@@ -47,9 +47,12 @@ export default function(sourceImg, onLoaded) {
     }
     if (errorCounter === 0) {
       onLoaded(null, imgs)
+    } else if (errorCounter === tempImgs.length){
+      console.error('[Dropping Canvas]: all images failed to load.')
+      return
     } else {
       onLoaded(
-        `[Dropping Canvas]: ${errorCounter} images failed to load.)`,
+        `[Dropping Canvas]: ${errorCounter} images failed to load.`,
         imgs
       )
     }
